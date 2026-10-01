@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Guarneri | Finance Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #0b1f3a;
+            padding: 18px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #9db7d7;
+        }
+
+        header {
+            background-color: #0b1f3a;
+            color: white;
+            min-height: 520px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 10%;
+        }
+
+        .hero {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            margin-bottom: 8px;
+        }
+
+        .hero-text h2 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #c8d6e8;
+            margin-bottom: 22px;
+        }
+
+        .hero-text p {
+            font-size: 19px;
+            margin-bottom: 28px;
+        }
+
+        .headshot {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: white;
+            color: #0b1f3a;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            background-color: #dce5ef;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 75px 10%;
+        }
+
+        section h2 {
+            color: #0b1f3a;
+            font-size: 32px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 18px;
+            max-width: 850px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 22px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 28px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-top: 5px solid #0b1f3a;
+        }
+
+        .project-card h3 {
+            color: #0b1f3a;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #0b1f3a;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #0b1f3a;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 750px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .headshot {
+                width: 220px;
+                height: 220px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Jake Guarneri</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+
+            <div class="hero-text">
+                <h1>Jake Guarneri</h1>
+                <h2>Finance Student | Investment Banking Intern</h2>
+
+                <p>
+                    Finance student at Rutgers Business School with experience
+                    in investment banking, financial analysis, valuation, and
+                    financial modeling.
+                </p>
+
+                <a class="button"
+                   href="https://www.linkedin.com/in/jake-guarneri"
+                   target="_blank">
+                   LinkedIn
+                </a>
+
+                <a class="button" href="#projects">
+                    View My Projects
+                </a>
+            </div>
+
+            <img
+                src="jake-headshot.png"
+                alt="Jake Guarneri professional headshot"
+                class="headshot"
+            >
+
+        </div>
+    </header>
+
+    <!-- Personal Statement -->
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a Rutgers Business School finance student and investment
+            banking intern passionate about financial analysis, valuation,
+            financial modeling, and using data to support strategic
+            business decisions.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">Microsoft Excel</div>
+
+            <div class="skill">Financial Analysis</div>
+
+            <div class="skill">Financial Modeling</div>
+
+            <div class="skill">Cash Flow Analysis</div>
+
+            <div class="skill">Company Valuation</div>
+
+            <div class="skill">Adjusted EBITDA Analysis</div>
+
+            <div class="skill">Market Research</div>
+
+            <div class="skill">Professional Communication</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+
+                <h3>Wells Fargo CSBB Job Simulation</h3>
+
+                <p>
+                    Completed a Wells Fargo Consumer, Small & Business Banking
+                    job simulation through Forage. Analyzed customer trends
+                    and financial information to identify customer needs and
+                    develop strategic business recommendations.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong> Financial Analysis, Strategic
+                    Decision Making, Customer Analysis
+                </p>
+
+                <a href="https://www.theforage.com/"
+                   target="_blank">
+                    View Forage
+                </a>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+
+                <h3>Acquisition Valuation & Financial Dashboard</h3>
+
+                <p>
+                    Developed a financial analysis project modeled after
+                    investment banking acquisition work. Evaluated historical
+                    financial performance, normalized earnings, calculated
+                    Adjusted EBITDA, and organized key valuation and growth
+                    metrics into an Excel-based financial dashboard.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong> Excel, Financial Modeling,
+                    Adjusted EBITDA, Valuation, Cash Flow Analysis
+                </p>
+
+                <a href="#contact">
+                    Project Summary
+                </a>
+
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+
+                <h3>Investment Banking Company Analysis</h3>
+
+                <p>
+                    Conducted company and industry analysis to evaluate
+                    financial performance, growth opportunities, and potential
+                    transaction risks. Organized findings into a concise
+                    investment-style company overview.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong> Company Analysis, Industry
+                    Research, Financial Statements, Investment Banking
+                </p>
+
+                <a href="#contact">
+                    Project Summary
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Interested in connecting about finance, investment banking,
+            or internship opportunities?
+        </p>
+
+        <br>
+
+        <p>
+            Email:
+            <a href="mailto:jakejoseph0706@gmail.com">
+                jakejoseph0706@gmail.com
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/jake-guarneri"
+               target="_blank">
+                linkedin.com/in/jake-guarneri
+            </a>
+        </p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Jake Guarneri | Finance Portfolio</p>
+    </footer>
+
+</body>
+</html>
